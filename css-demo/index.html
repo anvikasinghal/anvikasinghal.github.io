@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+
+    <style>
+        body {
+            background-color: rgb(230, 145, 66);
+        }
+
+        #blue-text {
+            color: blue;
+        }
+
+        #red-text {
+            color: red;
+        }
+
+        #colorsizealign {
+            color: green;
+            font-size: 24px;
+            text-align: right;
+        }
+
+        .really-big {
+            font-size: xx-large;
+        }
+
+        .mystery {
+            color: purple;
+            font-size: xx-large;
+            text-align: right;
+        }
+
+        h3,
+        h4 {
+            color: aqua;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+
+        .div1 {
+            color: rgb(96, 64, 64);
+            font-size: large;
+        }
+
+        span {
+            background-color: white;
+            font-size: small;
+        }
+
+        .animation {
+            width: 200px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: animation1;
+            animation-duration: 10s;
+        }
+
+        @keyframes animation1 {
+            0% {
+                background-color: red;
+                left: 0;
+            }
+
+            10% {
+                background-color: orange;
+            }
+
+            20% {
+                background-color: yellow;
+            }
+
+            30% {
+                background-color: greenyellow;
+            }
+
+            40% {
+                background-color: green;
+            }
+
+            50% {
+                background-color: lightblue;
+            }
+
+            60% {
+                background-color: blue;
+            }
+
+            70% {
+                background-color: rgb(191, 191, 249);
+            }
+
+            80% {
+                background-color: purple;
+            }
+
+            90% {
+                background-color: lightpink;
+            }
+
+            100% {
+                background-color: rgb(255, 125, 147);
+                left: 100;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>today we will learn about adding style</h1>
+
+    <h2>1. this is how we add style with inline css</h2>
+    <p>this paragraph has no style</p>
+    <p style="color:seagreen">this is a seagreen paragraph</p>
+    <p style="color:rgb(235, 11, 223); font-size: 50px;">this is a rgb(235, 11, 223), 50x size paragraph</p>
+    <p style="color:red; font-size: 24px; text-align: center; background-color: rgb(255, 202, 183)">this is a red, font
+        size 24x,
+        centered paragraph with a coral background</p>
+
+    <h2>2. this is how we add style with internal css and id selectors</h2>
+    <p id="blue-text">i want this text to be blue</p>
+    <p id="red-text">this one should be red</p>
+    <p id="colorsizealign">this text will be orange, 24px, and right aligned</p>
+
+    <h2>3. this is how we add style with internal css and class selectors</h2>
+    <p class="really-big">i want this text to be really big</p>
+    <p class="mystery">what will i look like?</p>
+
+    <h2>4. this is how we use element tag selectors</h2>
+    <h3>i want this h3 to be aqua</h3>
+    <h4>i want this h4 to be aqua</h4>
+
+    <h2>5. this is how we use divs and spans</h2>
+
+    <div class="div1">
+        <p>figure out on your own how to create table borders like this using element selectors</p>
+
+        <table>
+            <tr>
+                <th>day</th>
+                <th>food</th>
+            </tr>
+            <tr>
+                <td>monday</td>
+                <td>chicken fried rice</td>
+            </tr>
+            <tr>
+                <td>tuesday</td>
+                <td>spaghetti</td>
+            </tr>
+        </table>
+
+        <p>this paragraph is also part of the div. and <span>this is a span inside the div</span></p>
+        <p>this paragraph is still part of the div</p>
+
+    </div>
+
+    <div class="animation"></div>
+</body>
+
+</html>
