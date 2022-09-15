@@ -1,0 +1,103 @@
+/*
+scheme green: rgb(125, 140, 81)
+scheme brown: rgb(196, 178, 166)
+light green: rgb(169, 183, 126)
+dark green: rgb(95, 107, 58)
+dark brown: rgb(155, 106, 74)
+scheme purple: rgb(141, 90, 151)
+scheme red: rgb(248, 154, 132)
+*/
+
+.title,
+h1 {
+    text-align: center;
+    color: rgb(125, 140, 81);
+    padding: 10px;
+}
+
+h2 {
+    color: rgb(141, 90, 151);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#footnote {
+    font-size: x-small;
+}
+
+/*.exclamations {
+    color: rgb(248, 154, 132);
+}*/
+
+.bordered_table table,
+.bordered_table td,
+.bordered_table tr {
+    border: 2px solid rgb(176, 81, 60);
+    text-align: center;
+    margin: auto;
+}
+
+img {
+    border: 15px double rgb(176, 81, 60);
+    padding: 5px;
+    margin: auto;
+    display: block;
+}
+
+.as_container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 2px solid rgb(155, 106, 74);
+    padding: none;
+    background-color: rgb(212, 201, 192);
+    border-radius: 15px;
+}
+
+.as_nav {
+    list-style: none;
+    text-align: center;
+}
+
+.as_nav li {
+    display: inline;
+    margin-right: 60px;
+    padding: 10px;
+}
+
+.as_container a:link,
+.as_container a:visited {
+    color: black;
+    background-color: rgb(169, 183, 126);
+    padding: 13px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid rgb(95, 107, 58);
+    border-radius: 5px;
+
+}
+
+.as_container a:hover,
+.as_container a:active {
+    background-color: rgb(95, 107, 58);
+    color: white;
+    border-radius: 5px;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 60px;
+    padding: 10px;
+}
+
+#current {
+    font-weight: bold;
+}
+
+.normal_list {
+    text-align: center;
+    list-style: none;
+}

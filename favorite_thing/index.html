@@ -6,39 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favorite Thing About School</title>
+    <title>My Favorite Thing About School | HOME</title>
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
-        .title {
-            text-align: center;
-            color: rgb(120, 122, 64);
-            background-color: rgb(218, 211, 203);
-            padding: 10px;
-        }
 
-        h2 {
-            color: rgb(109, 98, 126);
-        }
-
-        #footnote {
-            font-size: x-small;
-        }
-
-        .exclamations {
-            color: rgb(246, 154, 152);
-        }
-
-        table,
-        td,
-        tr {
-            border: 1px solid;
-            text-align: center;
-        }
-
-        img {
-            border: 15px double rgb(92, 92, 1);
-            padding: 5px;
-        }
     </style>
 
 </head>
@@ -46,13 +18,21 @@
 
 <body>
 
+    <div class="as_container">
+        <ul class="as_nav">
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a id="current" href="index.html">HOME</a></li>
+            <li><a href="more.html">MORE</a></li>
+        </ul>
+    </div>
+
     <div class="title">
         <h1>My Favorite Thing About School</h1>
         <p>There's a few, but we all know reflections aren't on that list :)</p>
     </div>
 
-    <h2 style="color: rgb(159,191,140);">some of my favorites are...</h2>
-    <ul>
+    <h2>some of my favorites are...</h2>
+    <ul class="normal_list">
         <li>the campus</li>
         <li>rowing</li>
         <li>
@@ -66,15 +46,16 @@
         <li>the people</li>
     </ul>
 
-    <h4 class="exclamations">but another thing that I find really cool is the <span style="font-size: x-large;">EV
-            Club</span></h4>
+    <p class="exclamations">but another thing that I find really cool is the <span
+            style="font-size: x-large; color: rgb(125, 140, 81);">EV
+            Club</span></p>
     <p>sure, the school has a bunch of clubs, but really, EV is the best<br><span id="footnote">*however, if you
             truly aren't convinced, a bunch of others can be found <a
                 href="https://www.eastsideprep.org/current-families/clubs-and-academic-teams/"
                 target="_blank">here</a></span></p>
 
     <h2>sooo... what is this EV Club??</h2>
-    <h3 class="exclamations">well let me tell you!</h3>
+    <p class="exclamations">well let me tell you!</p>
     <p>basically, we have a junk miata that we are turning into a fully electric car.<br> just recently, we finally got
         it running, and are excited to keep working on making it better.</p>
 
@@ -89,40 +70,44 @@
 
 
     <h2>okok whatever, why should I come?</h2>
-    <h3 class="exclamations">I suppose it depends on who you are</h3>
+    <p class="exclamations">I suppose it depends on who you are</p>
 
-    <table>
-        <tr>
-            <th><u>person</u></th>
-            <th><u>reason</u></th>
-            <th><u>% chance of quitting</u></th>
-            <th><u>reason for quitting</u></th>
-        </tr>
-        <tr>
-            <td>tech nerd</td>
-            <td>um tech</td>
-            <td>3</td>
-            <td>bored</td>
-        </tr>
-        <tr>
-            <td>normal student</td>
-            <td>learning new things?</td>
-            <td>50</td>
-            <td>realized learning is boring</td>
-        </tr>
-        <tr>
-            <td>student who can't find a club</td>
-            <td>it sounds cool ig?</td>
-            <td>83</td>
-            <td>too complicated</td>
-        </tr>
-        <tr>
-            <td>crazy person</td>
-            <td>this website</td>
-            <td>110</td>
-            <td>absolutely oversold</td>
-        </tr>
-    </table>
+
+    <div class="bordered_table">
+        <table>
+            <tr>
+                <th><u>person</u></th>
+                <th><u>reason</u></th>
+                <th><u>% chance of quitting</u></th>
+                <th><u>reason for quitting</u></th>
+            </tr>
+            <tr>
+                <td>tech nerd</td>
+                <td>um tech</td>
+                <td>3</td>
+                <td>bored</td>
+            </tr>
+            <tr>
+                <td>normal student</td>
+                <td>learning new things?</td>
+                <td>50</td>
+                <td>realized learning is boring</td>
+            </tr>
+            <tr>
+                <td>student who can't find a club</td>
+                <td>it sounds cool ig?</td>
+                <td>83</td>
+                <td>too complicated</td>
+            </tr>
+            <tr>
+                <td>crazy person</td>
+                <td>this website</td>
+                <td>110</td>
+                <td>absolutely oversold</td>
+            </tr>
+        </table>
+    </div>
+
 </body>
 
 </html>
