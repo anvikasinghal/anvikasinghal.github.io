@@ -101,3 +101,8 @@ img {
     text-align: center;
     list-style: none;
 }
+
+table {
+    text-align: center;
+    margin: auto;
+}
