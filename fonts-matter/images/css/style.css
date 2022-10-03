@@ -6,54 +6,6 @@ queen pink: rgb(217, 189, 197)
 thistle: rgb(232, 199, 222)
 */
 
-.grid-container {
-    display: grid;
-    text-align: center;
-    grid-gap: 10px;
-    grid-template-columns: auto auto auto;
-}
-
-.grid-item {
-    background-color: rgb(191, 202, 217);
-    text-align: center;
-    font-size: 20px;
-    padding: none;
-}
-
-.as_container {
-    grid-column: 1 / span 3;
-    grid-row: 1;
-}
-
-.main-image {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-}
-
-.main-content {
-    grid-column: 1 / span 2;
-    grid-row: 3;
-}
-
-.main2-content {
-    grid-column: 1 / span 2;
-    grid-row: 5;
-}
-
-.side-nav {
-    grid-column: 3;
-    grid-row: 3 / span 2;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    background-color: green;
-}
-
 h1 {
     text-align: center;
     color: rgb(122, 58, 113);
@@ -69,7 +21,7 @@ p {
     text-align: center;
 }
 
-/*.page_formatting {
+.page_formatting {
     width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -77,16 +29,29 @@ p {
     border: rgb(77, 101, 122) 15px double;
     border-radius: 25px;
 }
-*/
 
+.about-colors {
+    width: 800px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgb(251, 237, 219);
+    border: rgb(77, 101, 122) 5px double;
+    border-radius: 25px;
+}
 
+img {
+    border: 5px double rgb(77, 101, 122);
+    padding: 5px;
+    margin: auto;
+    display: block;
+}
 
 .as_container {
     width: 1000px;
-    margin: auto;
-    border: 2px solid rgb(115, 32, 2);
+    margin: 0 auto;
+    border: 2px solid rgb(114, 128, 55);
     padding: none;
-    background-color: rgb(228, 148, 134);
+    background-color: rgb(190, 198, 154);
     border-radius: 15px;
 }
 
@@ -104,21 +69,27 @@ p {
 .as_container a:link,
 .as_container a:visited {
     color: black;
-    background-color: rgb(232, 192, 99);
+    background-color: rgb(201, 187, 198);
     padding: 13px 22px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border: 2px solid rgb(143, 104, 13);
+    border: 2px solid rgb(87, 16, 76);
     border-radius: 5px;
 
 }
 
 .as_container a:hover,
 .as_container a:active {
-    background-color: rgb(143, 104, 13);
+    background-color: rgb(87, 16, 76);
     color: white;
     border-radius: 5px;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 60px;
+    padding: 10px;
 }
 
 .current {

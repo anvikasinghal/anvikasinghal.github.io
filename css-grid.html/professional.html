@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID | PROFESSIONAL</title>
+
+    <style>
+        .as_container {
+            width: 1218px;
+            background-color: rgb(216, 182, 182);
+            padding: 0px;
+        }
+
+        .as_nav {
+            list-style: none;
+            text-align: left;
+            padding: none;
+        }
+
+        .as_nav li {
+            display: inline;
+            margin-right: 30px;
+            padding: auto;
+        }
+
+        .as_container a:link,
+        .as_container a:visited {
+            color: black;
+            background-color: rgb(173, 199, 209);
+            padding: 13px 22px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid rgb(64, 115, 135);
+            border-radius: 5px;
+
+        }
+
+        .as_container a:hover,
+        .as_container a:active {
+            background-color: rgb(64, 115, 135);
+            color: white;
+            border-radius: 5px;
+        }
+
+        .page_formatting {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .grid-container {
+            background-color: rgb(240, 230, 232);
+            border: 15px solid rgb(171, 196, 206);
+            display: grid;
+            text-align: center;
+            grid-gap: 10px;
+            grid-template-columns: 35% 10% 16% 39%;
+        }
+
+        .grid-item {
+            text-align: center;
+            font-size: 20px;
+            padding: none;
+        }
+
+        .as_container {
+            grid-column: 1 / span 4;
+            grid-row: 1;
+        }
+
+        .header {
+            grid-column: 1;
+            grid-row: 2;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 250px 0;
+            background-color: rgba(244, 176, 98, 255);
+        }
+
+        .img1 {
+            grid-column: 2 / span 4;
+            grid-row: 2;
+            padding: 20px;
+        }
+
+        .img2 {
+            grid-column: 1 / span 3;
+            grid-row: 3;
+            padding: 20px;
+        }
+
+        .content1 {
+            grid-column: 4;
+            grid-row: 3;
+            margin: 20px;
+            margin-right: 50px;
+            padding: 20px;
+            background-color: rgb(140, 155, 102);
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            background-color: green;
+        }
+
+        img {
+            border: 2px solid rosybrown;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="page_formatting grid-container">
+
+        <div class="as_container grid-item">
+            <ul class="as_nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="current" href="PROFESSIONAL.html">PROFESSIONAL</a></li>
+                <li><a href="">TMP</a></li>
+                <li><a href="">TMP</a></li>
+            </ul>
+        </div>
+
+        <div class="header grid-item">
+            <h1>LOOK AT THE FLOWERS</h1>
+            <p>EVEN THOUGH IT'S FALL, THEY'RE STILL PRETTY</p>
+        </div>
+
+        <div style="width: 200px; padding-left: 10px;" class="img1 grid-item"><img src="images/pretty flower 1.jpg"
+                alt=""></div>
+        <div class="img2 grid-item"><img src="images/pretty flower 3.png" alt=""></div>
+
+        <div class="content1 grid-item">
+            <br><br><br><br>
+            <h2>NOTHING SPECIAL</h2>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
