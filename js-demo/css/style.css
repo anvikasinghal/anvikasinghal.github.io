@@ -1,0 +1,109 @@
+/*
+green sheen: rgb(137, 182, 165)
+english violet: rgb(76, 59, 77)
+aero blue: rgb(201, 237, 220)
+queen pink: rgb(217, 189, 197)
+thistle: rgb(232, 199, 222)
+*/
+
+
+h1 {
+    text-align: center;
+    color: rgb(122, 58, 113);
+    padding: 10px;
+}
+
+h2 {
+    color: rgb(114, 128, 55);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.page_formatting {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(251, 237, 219);
+    border: rgb(77, 101, 122) 15px double;
+    border-radius: 25px;
+    text-align: center;
+}
+
+a,
+ol,
+p,
+button {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+img {
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.as_container {
+    width: 1000px;
+    margin: auto;
+    border: 2px solid rgb(115, 32, 2);
+    padding: none;
+    background-color: rgb(228, 148, 134);
+    border-radius: 15px;
+}
+
+.as_nav {
+    list-style: none;
+    text-align: center;
+}
+
+.as_nav li {
+    display: inline;
+    margin-right: 60px;
+    padding: 10px;
+}
+
+.as_container a:link,
+.as_container a:visited {
+    color: black;
+    background-color: rgb(232, 192, 99);
+    padding: 13px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid rgb(143, 104, 13);
+    border-radius: 5px;
+
+}
+
+.as_container a:hover,
+.as_container a:active {
+    background-color: rgb(143, 104, 13);
+    color: white;
+    border-radius: 5px;
+}
+
+.current {
+    font-weight: bold;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+    border: 5px double rgb(77, 101, 122);
+}
+
+td,
+th {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+details {
+    text-align: center;
+
+}

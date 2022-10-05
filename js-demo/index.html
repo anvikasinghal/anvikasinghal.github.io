@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID | HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hlh8vdi.css">
+
+    <style>
+
+    </style>
+
+</head>
+
+
+<body>
+    <div class="page-formatting">
+        <div class="as_container grid-item">
+            <ul class="as_nav">
+                <li><a class="current" href="index.html">HOME</a></li>
+                <li><a href="">TMP</a></li>
+                <li><a href="">TMP</a></li>
+                <li><a href="">TMP</a></li>
+            </ul>
+        </div>
+
+        <h1>JAVASCRIPT</h1>
+        <h2>on click events and alerts</h2>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            onclick="alert('warning! you are navigating away from my page!')">school website</a>
+
+        <br>
+        <hr>
+
+        <h2>secret identity</h2>
+        <p id="secret"></p><br>
+
+        <button
+            onclick="document.getElementById('secret').innerHTML='hehe no secret for you'; document.getElementById('secret').style.display='block'">reveal</button>
+        <button onclick="document.getElementById('secret').style.display='none'">hide</button>
+
+        <br>
+        <hr>
+
+        <h2>two truths and a lie</h2>
+        <p>which one is the lie?</p><br>
+
+        <ol>
+            <li>i've broken five bones</li>
+            <li>i have a younger brother</li>
+            <li>my dog's name is nailah</li>
+        </ol><br>
+
+        <p id="lie"></p><br>
+
+        <button
+            onclick="document.getElementById('lie').innerHTML='i don\'t have a dog :)'; document.getElementById('lie').style.display='block'">reveal</button>
+        <button onclick="document.getElementById('lie').style.display='none'">hide</button>
+
+        <br>
+        <hr>
+
+        <h2>whats the color?</h2>
+
+        <img src="images/dandelion-blackwhite.jpg" alt="" id="imagebw"><br>
+        <button onclick="document.getElementById('imagebw').src='images/dandelion.jpg'">reveal color</button>
+        <button onclick="document.getElementById('imagebw').src='images/dandelion-blackwhite.jpg'">black and
+            white</button>
+
+        <br>
+        <hr>
+
+        <h2>css styles with button</h2>
+
+        <p id="alice">hey i'm alice</p><br>
+        <button
+            onclick="document.getElementById('alice').style.color='green'; document.getElementById('alice').style.fontSize='5px'">cake:
+            eat me</button>
+        <button
+            onclick="document.getElementById('alice').style.color='pink'; document.getElementById('alice').style.fontSize='40px'">potion:
+            drink me</button>
+        <button onclick="normalAlice();">return to normal</button><br>
+
+        <br>
+        <hr>
+
+        <h2>return user input data</h2>
+
+        <button onclick="askName();">what's your name?</button><br>
+        <p id="askname"></p><br>
+
+        <br>
+        <hr>
+
+        <h2>give me a border</h2>
+
+        <img src="images/black.jfif" alt="" id="borderimage"><br>
+
+        <button onclick="colorGreen();">green and solid</button>
+        <button onclick="colorPink();">pink and double</button>
+        <button onclick="colorNormal();">return to normal</button>
+
+        <br>
+        <hr>
+
+        <h2>disappearing</h2>
+
+        <p style="font-size: 30px;" id="disappearing"><strong>make me disappear</strong></p><br>
+
+        <button onclick="hundred();">100%</button>
+        <button onclick="seventyfive();">75%</button>
+        <button onclick="fifty();">50%</button>
+        <button onclick="twentyfive();">25%</button>
+        <button onclick="zero();">0%</button><br>
+
+    </div>
+
+
+    <script>
+        function normalAlice() {
+            let aliceParagraph = document.getElementById('alice');
+
+            aliceParagraph.style.color = 'black';
+            aliceParagraph.style.fontSize = 'medium';
+        }
+
+        function askName() {
+            let nameParagraph = document.getElementById('askname');
+            let name = prompt("what is your name");
+
+            if (name === "batman") {
+                nameParagraph.innerHTML = "welcome to the batcave sir";
+            } else {
+                nameParagraph.innerHTML = "hey " + name + "!";
+            }
+        }
+
+        let borderParagraph = document.getElementById('borderimage');
+        function colorGreen() {
+            borderParagraph.style.border = "10px solid green";
+        }
+
+        function colorPink() {
+            borderParagraph.style.border = "20px double pink";
+        }
+
+        function colorNormal() {
+            borderParagraph.style.border = "none";
+        }
+
+
+
+        let disappearParagraph = document.getElementById('disappearing');
+        function hundred() {
+            disappearParagraph.style.opacity = "1"
+        }
+
+        function seventyfive() {
+            disappearParagraph.style.opacity = "0.75"
+        }
+
+        function fifty() {
+            disappearParagraph.style.opacity = "0.5"
+        }
+
+        function twentyfive() {
+            disappearParagraph.style.opacity = "0.25"
+        }
+
+        function zero() {
+            disappearParagraph.style.opacity = "0"
+        }
+
+    </script>
+
+</body>
+
+</html>
