@@ -1,0 +1,43 @@
+.as_container {
+    width: 1000px;
+    margin: auto;
+    border: 2px solid rgb();
+    padding: none;
+    background-color: rgb();
+    border-radius: 15px;
+}
+
+.as_nav {
+    list-style: none;
+    text-align: center;
+}
+
+.as_nav li {
+    display: inline;
+    margin-right: 60px;
+    padding: 10px;
+}
+
+.as_container a:link,
+.as_container a:visited {
+    color: black;
+    background-color: rgb();
+    padding: 13px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid rgb();
+    border-radius: 5px;
+
+}
+
+.as_container a:hover,
+.as_container a:active {
+    background-color: rgb(black);
+    color: white;
+    border-radius: 5px;
+}
+
+.current {
+    font-weight: bold;
+}
