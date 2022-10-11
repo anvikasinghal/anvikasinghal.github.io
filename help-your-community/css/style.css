@@ -33,11 +33,20 @@
 
 .as_container a:hover,
 .as_container a:active {
-    background-color: rgb(black);
+    background-color: black;
     color: white;
     border-radius: 5px;
 }
 
 .current {
     font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: lightskyblue;
 }
