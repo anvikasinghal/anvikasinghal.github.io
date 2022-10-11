@@ -23,6 +23,11 @@ thistle: rgb(232, 199, 222)
 
 .as_container {
     grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.as_container {
+    grid-column: 1 / span 3;
     grid-row: 1;
 }
 
