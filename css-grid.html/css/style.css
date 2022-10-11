@@ -21,10 +21,6 @@ thistle: rgb(232, 199, 222)
     padding: 20px;
 }
 
-.as_container {
-    grid-column: 1 / span 3;
-    grid-row: 2;
-}
 
 .as_container {
     grid-column: 1 / span 3;
