@@ -2,29 +2,15 @@
     display: grid;
     text-align: center;
     grid-gap: 5px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 17% 16.33% 33.33% 33.33%;
 }
 
 .grid-item {
     background-color: white;
 }
 
-.swoosh-header {
-    grid-column: 1;
-    grid-row: 1;
-    width: 75px;
-}
-
-.swoosh-text {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: left;
-    padding-top: 25px;
-    padding-right: 160px;
-}
-
 .as_container {
-    width: 100%;
+    width: 98%;
     margin: auto;
     border: 2px solid blue;
     padding: none;
@@ -33,7 +19,7 @@
 }
 
 .as_container {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
     grid-row: 2;
 }
 
