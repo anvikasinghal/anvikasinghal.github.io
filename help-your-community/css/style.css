@@ -9,6 +9,19 @@
     background-color: white;
 }
 
+.swoosh-header {
+    grid-column: 1;
+    grid-row: 1;
+    width: 25px;
+}
+
+.swoosh-text {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    padding-top: 25px;
+    text-align: left;
+}
+
 .as_container {
     width: 98%;
     margin: auto;
