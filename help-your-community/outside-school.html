@@ -88,7 +88,7 @@
 
         <div class="main1 grid-item"><h3>Mountain Biking</h3></div>
         <button onclick="bike();" class="button1 grid-item">Get Information</button>
-        <div><p id="mountain-biking" class="p1 grid-item"></p></div>
+        <div class="p1 grid-item"><p id="mountain-biking"></p></div>
 
         <div class="main2 grid-item"><h3>US Camping Trip</h3></div>
         <button onclick="camp();" class="button2 grid-item">Get Information</button>
@@ -96,7 +96,7 @@
 
         <div class="main3 grid-item"><h3>Seattle Hike</h3></div>
         <button onclick="hike();" class="button3 grid-item">Get Information</button>
-        <div class="p3 grid-item"><p id="camping-trip"></p></div>
+        <div class="p3 grid-item"><p id="hiking-trip"></p></div>
 
 
     
@@ -106,15 +106,19 @@
 
 <script>
     function bike(){
-        let bikeInfo = document.getElementById('mountain-biking')
+        let bikeInfo = document.getElementById('mountain-biking');
+        bikeInfo.innerHTML= "Info";
+        
     }
 
     function camp(){
         let campInfo = document.getElementById('camping-trip')
+        campInfo.innerHTML= "Info";
     }
 
     function hike(){
-        let hikeInfo = document.getElementById('camping-trip')
+        let hikeInfo = document.getElementById('hiking-trip')
+        hikeInfo.innerHTML= "Info";
     }
 
 </script>
