@@ -37,7 +37,7 @@
 
     .p1{
         grid-column: 1 / span 2;
-        grid-row: 6;
+        grid-row: 7;
     }
 
     .button2{
@@ -47,7 +47,7 @@
 
     .p2{
         grid-column: 3;
-        grid-row: 6;
+        grid-row: 7;
     }
 
     .button3{
@@ -56,6 +56,21 @@
     }
 
     .p3{
+        grid-column: 4;
+        grid-row: 7;
+    }
+
+    .no-button1{
+        grid-column: 1 / span 2;
+        grid-row: 6;
+    }
+
+    .no-button2{
+        grid-column: 3;
+        grid-row: 6;
+    }
+
+    .no-button3{
         grid-column: 4;
         grid-row: 6;
     }
@@ -88,14 +103,17 @@
 
         <div class="main1 grid-item"><h3>Mountain Biking</h3></div>
         <button onclick="bike();" class="button1 grid-item">Get Information</button>
+        <button onclick="noBike();" class="no-button1 grid-item">Hide Information</button>
         <div class="p1 grid-item"><p id="mountain-biking"></p></div>
 
         <div class="main2 grid-item"><h3>US Camping Trip</h3></div>
         <button onclick="camp();" class="button2 grid-item">Get Information</button>
+        <button onclick="noCamp();" class="no-button2 grid-item">Hide Info</button>
         <div class="p2 grid-item"><p id="camping-trip"></p></div>
 
         <div class="main3 grid-item"><h3>Seattle Hike</h3></div>
         <button onclick="hike();" class="button3 grid-item">Get Information</button>
+        <button onclick="noHike()" class="no-button3 grid-item">Hide Info</button>
         <div class="p3 grid-item"><p id="hiking-trip"></p></div>
 
 
@@ -111,14 +129,29 @@
         
     }
 
+    function noBike(){
+        let noBikeInfo = document.getElementById('mountain-biking');
+        noBikeInfo.innerHTML = " ";
+    }
+
     function camp(){
         let campInfo = document.getElementById('camping-trip')
         campInfo.innerHTML= "Info";
     }
 
+    function noCamp(){
+        let noCampInfo = document.getElementById('camping-trip')
+        noCampInfo.innerHTML = " ";
+    }
+
     function hike(){
         let hikeInfo = document.getElementById('hiking-trip')
         hikeInfo.innerHTML= "Info";
+    }
+
+    function noHike(){
+        let noHikeInfo = document.getElementById('hiking-trip')
+        noHikeInfo.innerHTML = " ";
     }
 
 </script>
