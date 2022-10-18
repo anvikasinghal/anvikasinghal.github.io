@@ -1,8 +1,17 @@
+/*
+    background yellow: rgba(220,169,88,255)
+    red: rgba(140,14,15,255)
+    blue: rgb(10,41,58)
+*/
+
 .grid-container {
     display: grid;
     text-align: center;
     grid-gap: 5px;
     grid-template-columns: 17% 16.33% 33.33% 33.33%;
+    font-family: interstate, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .grid-item {
@@ -24,10 +33,24 @@
 
 h1 {
     color: rgb(239, 180, 1);
+    font-family: interstate, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 h2 {
     color: rgb(39, 68, 111);
+    font-family: interstate, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p,
+footer,
+div {
+    font-family: interstate, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .as_container {
