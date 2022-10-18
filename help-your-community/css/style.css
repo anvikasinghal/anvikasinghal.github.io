@@ -22,12 +22,20 @@
     text-align: left;
 }
 
+h1 {
+    color: rgb(239, 180, 1);
+}
+
+h2 {
+    color: rgb(39, 68, 111);
+}
+
 .as_container {
     width: 98%;
     margin: auto;
-    border: 2px solid blue;
+    border: 2px solid rgb(10, 41, 58);
     padding: none;
-    background-color: rgb(207, 225, 243);
+    background-color: rgb(155, 184, 199);
     border-radius: 3px;
     grid-column: 1 / span 4;
     grid-row: 2;
@@ -61,7 +69,7 @@
 
 .as_container a:hover,
 .as_container a:active {
-    background-color: black;
+    background-color: rgb(10, 41, 58);
     color: white;
     border-radius: 5px;
 }
