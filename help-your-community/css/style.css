@@ -110,7 +110,9 @@ div {
     background-color: lightskyblue;
 }
 
-table {
+table,
+td,
+th {
     text-align: center;
     margin: auto;
     border: 3px solid rgb(140, 14, 15, 255);
