@@ -11,58 +11,72 @@
 </head>
 
 <style>
-    .cc {
-        grid-column: 1;
+    .title {
+        grid-column: 1 / span 4;
+        grid-row: 3;
+    }
+
+    .wht {
+        grid-column: 1 / span 4;
         grid-row: 4;
     }
 
-    .ultimate {
+    .cc {
         grid-column: 1;
         grid-row: 5;
     }
 
-    .vb {
+    .ultimate {
         grid-column: 1;
         grid-row: 6;
     }
 
-    .golf {
+    .vb {
         grid-column: 1;
         grid-row: 7;
     }
 
-    .rowing {
+    .golf {
         grid-column: 1;
         grid-row: 8;
     }
 
-    .soccer {
+    .rowing {
         grid-column: 1;
         grid-row: 9;
     }
 
-    .tennis {
+    .soccer {
         grid-column: 1;
         grid-row: 10;
     }
 
-    .bb {
+    .tennis {
         grid-column: 1;
         grid-row: 11;
     }
 
-    .tf {
+    .bb {
         grid-column: 1;
         grid-row: 12;
+    }
+
+    .tf {
+        grid-column: 1;
+        grid-row: 13;
     }
 
     .left {
         text-align: left;
     }
 
-    .ccv {
-        grid-column: 2;
-        grid-row: 4;
+    .vid {
+        grid-column: 1 / span 4;
+        grid-row: 14;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 </style>
 
@@ -91,7 +105,23 @@
         </div>
 
         <h1>Sports Teams</h1>
-        <p>Helping Your Community</p>
+
+        <div class="title grid-item">
+            <h1>SPORTS TEAMS</h1>
+            <p>
+                EPS sports teams and athletics are provided as a way for students to connect with each other, challenge
+                themselves, all while in a safe enviroment. Our program is no-cut, meaning each student has a chance to
+                participate in what they like.
+            </p>
+        </div>
+
+        <div class="wht grid-item">
+            <p>
+                Here's a little about each team at our school.
+            </p>
+            <br>
+        </div>
+
 
         <br>
 
@@ -123,8 +153,8 @@
             <h3>Track & Field</h3>
         </div>
 
-        <div class="grid-item ccv">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6ToxlznnpIU"
+        <div class="grid-item vid">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DGM8Z7fJyn0"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
