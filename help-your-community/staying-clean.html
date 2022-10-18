@@ -14,44 +14,57 @@
             grid-row: 3;
         }
         
-        .img1 {
-            grid-column: 1 / span 2;
+        .intro {
+            grid-column: 1 / span 4;
             grid-row: 4;
         }
         
-        .img2 {
-            grid-column: 3;
-            grid-row: 4;
-        }
-        
-        .img3 {
-            grid-column: 4;
-            grid-row: 4;
-        }
-        
-        .compost {
-            grid-column: 1 / span 2;
-            grid-row: 5;
-        }
-        
-        .recycle {
+        .vid {
             grid-column: 3;
             grid-row: 5;
         }
         
-        .trash {
+        .img {
+            grid-column: 3;
+            grid-row: 6;
+        }
+        
+        .button1 {
+            grid-column: 1 / span 2;
+            grid-row: 7;
+        }
+        
+        .button2 {
+            grid-column: 3;
+            grid-row: 7;
+        }
+        
+        .button3 {
             grid-column: 4;
-            grid-row: 5;
+            grid-row: 7;
+        }
+        
+        .sort {
+            grid-column: 3;
+            grid-row: 8;
         }
         
         .cleanup {
             grid-column: 1 / span 2;
-            grid-row: 6;
+            grid-row: 9;
         }
         
         .habits {
             grid-column: 3 / span 2;
-            grid-row: 6;
+            grid-row: 9;
+        }
+        
+        h1 {
+            text-decoration: underline;
+        }
+        
+        button {
+            letter-spacing: 3px;
         }
     </style>
 </head>
@@ -83,21 +96,24 @@
             <h2>Helping Your Community</h2>
         </div>
 
-        <div class="img1"><img></div>
-        <div class="img2"><img></div>
-        <div class="img3"><img></div>
+        <div class="intro">
+            <p>We have the privilege of learning in a beautiful campus, so let's do our best to keep it clean!</p>
+        </div>
 
-        <div class="compost">
-            <h3>Compost</h3>
-            <p>desc</p>
+        <div class="vid">
+            <iframe width="auto" height="315" src="https://www.youtube.com/embed/EgSzMMigyQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="recycle">
-            <h3>Recycling</h3>
-            <p>desc</p>
-        </div>
-        <div class="trash">
-            <h3>Trash</h3>
-            <p>desc</p>
+
+        <div class="img1"><img></div>
+
+        <div class="button1"><button onclick="textRecycle()">RECYCLING?</button></div>
+        <div class="button2"><button onclick="textCompost()">COMPOST?</button></div>
+        <div class="button3"><button onclick="textTrash()">TRASH?</button></div>
+
+
+        <div class="sort">
+            <h3 id="sort1"></h3>
+            <p id="sort2"></p>
         </div>
 
         <div class="cleanup">
@@ -112,6 +128,28 @@
 
     </div>
     <div class="footer">CREATED BY SOPHIE</div>
+    <script>
+        function textRecycle() {
+            header = document.getElementById("sort1");
+            paragraph = document.getElementById("sort2");
+            header.innerHTML = "Recycling"
+            paragraph.innerHTML = "desc"
+        }
+
+        function textCompost() {
+            header = document.getElementById("sort1");
+            paragraph = document.getElementById("sort2");
+            header.innerHTML = "Compost"
+            paragraph.innerHTML = "desc"
+        }
+
+        function textTrash() {
+            header = document.getElementById("sort1");
+            paragraph = document.getElementById("sort2");
+            header.innerHTML = "Trash"
+            paragraph.innerHTML = "desc"
+        }
+    </script>
 </body>
 
 </html>
