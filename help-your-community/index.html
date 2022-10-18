@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/hlh8vdi.css">
 
     <style>
+        /*
+            background yellow: rgba(220,169,88,255)
+            red: rgba(140,14,15,255)
+            blue: rgb(10,41,58)
+        */
+
         .header {
             grid-column: 3;
             grid-row: 3
@@ -19,19 +25,25 @@
         .affinity-groups {
             grid-column: 1 / span 2;
             grid-row: 4;
-            border: 2px double black;
+            border: 5px double rgba(140, 14, 15, 255);
         }
 
         .outside-school {
             grid-column: 4;
             grid-row: 4;
-            border: 2px double black;
+            border: 5px double rgba(140, 14, 15, 255);
         }
 
         .homeimg1 {
             grid-column: 3;
-            grid-row: 4;
-            border: 2px double black;
+            grid-row: 4 / span 2;
+            border: 5px double rgba(140, 14, 15, 255);
+        }
+
+        .clubs {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+            border: 5px double rgba(140, 14, 15, 255);
         }
     </style>
 
@@ -77,6 +89,11 @@
 
         <div class="homeimg1 grid-item">
             <img style="width: 100%" src="images/EPShome.jpg" alt="outside of eps">
+        </div>
+
+        <div class="clubs grid-item">
+            <h2>CLUBS</h2>
+            <p>During the day, nothing extra. Check out a club and find a new favorite!</p>
         </div>
 
 
