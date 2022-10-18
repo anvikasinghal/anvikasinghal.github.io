@@ -17,6 +17,14 @@
             blue: rgb(10,41,58)
         */
 
+        h1 {
+            text-decoration: underline;
+        }
+
+        button {
+            letter-spacing: 3px;
+        }
+
         .header {
             grid-column: 3;
             grid-row: 3
@@ -70,7 +78,23 @@
             border: 5px double rgba(140, 14, 15, 255);
         }
 
-        .sports-teams {}
+        .sports-teams {
+            grid-column: 1 / span 2;
+            grid-row: 8;
+            border: 5px double rgba(140, 14, 15, 255);
+        }
+
+        table {
+            text-align: center;
+            margin: auto;
+            border: none;
+        }
+
+        td,
+        th {
+            padding-left: 10px;
+            padding-right: 10px
+        }
     </style>
 
 </head>
@@ -146,6 +170,21 @@
             <h2>SPORTS TEAMS</h2>
             <p>Support your sports teams or find a new one to join with this list of teams, descriptions, upcoming
                 games/races/meets, and more!</p>
+        </div>
+
+        <div class="social-media grid-item">
+            <h2>SOCIAL MEDIA</h2>
+            <table>
+                <tr>
+                    <th><button>INSTAGRAM</button></th>
+                    <th><button>TWITTER</button></th>
+                    <th><button>LINKDIN</button></th>
+                    <th><button>FACEBOOK</button></th>
+                </tr>
+                <tr>
+                    <td class="button-text"></td>
+                </tr>
+            </table>
         </div>
 
 

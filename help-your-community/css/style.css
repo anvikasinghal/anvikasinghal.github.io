@@ -109,3 +109,15 @@ div {
     width: 100%;
     background-color: lightskyblue;
 }
+
+table {
+    text-align: center;
+    margin: auto;
+    border: 3px solid rgb(140, 14, 15, 255);
+}
+
+td,
+th {
+    padding-left: 10px;
+    padding-right: 10px
+}
