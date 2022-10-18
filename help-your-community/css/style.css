@@ -29,9 +29,6 @@
     padding: none;
     background-color: rgb(207, 225, 243);
     border-radius: 3px;
-}
-
-.as_container {
     grid-column: 1 / span 4;
     grid-row: 2;
 }
