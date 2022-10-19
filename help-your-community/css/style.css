@@ -110,14 +110,30 @@ div {
     background-color: lightskyblue;
 }
 
-table {
+table,
+td,
+th {
     text-align: center;
     margin: auto;
     border: 3px solid rgb(140, 14, 15, 255);
-}
-
-td,
-th {
     padding-left: 10px;
     padding-right: 10px
+}
+
+button {
+    background-color: rgb(239, 180, 1);
+    border: 1px solid rgb(151, 114, 3);
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
 }

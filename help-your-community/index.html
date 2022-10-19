@@ -11,18 +11,26 @@
     <link rel="stylesheet" href="https://use.typekit.net/hlh8vdi.css">
 
     <style>
-        /*
-            background yellow: rgba(220,169,88,255)
+        /* COLORS
+            yellow: rgba(220,169,88,255)
             red: rgba(140,14,15,255)
             blue: rgb(10,41,58)
         */
 
         h1 {
+            /*NEW FEATURE*/
             text-decoration: underline;
         }
 
         button {
+            /*NEW FEATURE*/
             letter-spacing: 3px;
+            padding-left: 1px;
+            padding-right: 1px;
+            padding-top: none;
+            padding-right: none;
+            margin: none;
+            font-size: 14px;
         }
 
         .header {
@@ -84,16 +92,26 @@
             border: 5px double rgba(140, 14, 15, 255);
         }
 
-        table {
-            text-align: center;
-            margin: auto;
-            border: none;
+        .social-media {
+            grid-column: 4;
+            grid-row: 8;
+            border: 5px double rgba(140, 14, 15, 255);
         }
 
+        .EPStour {
+            grid-column: 3;
+            grid-row: 8;
+            border: 5px double rgba(140, 14, 15, 255);
+        }
+
+        table,
         td,
         th {
-            padding-left: 10px;
-            padding-right: 10px
+            text-align: center;
+            margin: none;
+            border: none;
+            padding-left: 1px;
+            padding-right: 1px;
         }
     </style>
 
@@ -176,15 +194,32 @@
             <h2>SOCIAL MEDIA</h2>
             <table>
                 <tr>
-                    <th><button>INSTAGRAM</button></th>
-                    <th><button>TWITTER</button></th>
-                    <th><button>LINKDIN</button></th>
-                    <th><button>FACEBOOK</button></th>
+                    <th><button onclick="instagram();"><a href="https://www.instagram.com/eastsidepreparatoryschool/"
+                                target="_blank">INSTAGRAM</a></button></th>
+                    <th><button onclick="twitter();"><a href="https://twitter.com/eastsideprep"
+                                target="_blank">TWITTER</a></button></th>
+                    <th><button onclick="linkedin()"><a
+                                href="https://www.linkedin.com/company/eastside-preparatory-school"
+                                target="_blank">LINKEDIN</a></button></th>
+                    <th><button onclick="facebook();"><a href="https://www.facebook.com/EastsidePrep"
+                                target="_blank">FACEBOOK</a></button>
+                    </th>
                 </tr>
                 <tr>
-                    <td class="button-text"></td>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
+                    <td>.</td>
                 </tr>
             </table>
+            <p id="button-text">stay connected!</p>
+        </div>
+
+        <div class="EPStour grid-item">
+            <iframe width="400" height="255" src="https://www.youtube.com/embed/kN6FGNQEqDg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
 
 
@@ -195,7 +230,23 @@
 
 
     <script>
+        let socialParagraph = document.getElementById('button-text');
 
+        function instagram() {
+            socialParagraph.innerHTML = "join us on instagram!";
+        }
+
+        function twitter() {
+            socialParagraph.innerHTML = "join us on twitter!";
+        }
+
+        function linkedin() {
+            socialParagraph.innerHTML = "join us on linkedin!";
+        }
+
+        function facebook() {
+            socialParagraph.innerHTML = "join us on facebook!";
+        }
     </script>
 
 </body>
