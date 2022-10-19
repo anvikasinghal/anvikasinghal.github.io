@@ -15,141 +15,29 @@
             grid-row: 3;
         }
         
-        .head1 {
-            grid-column: 1 / span 2;
+        .img {
+            grid-column: 1 / span 4;
             grid-row: 4;
         }
         
-        .head2 {
-            grid-column: 1 / span 2;
+        .desc {
+            grid-column: 1 / span 4;
             grid-row: 5;
         }
         
-        .head3 {
-            grid-column: 1 / span 2;
+        .table1 {
+            grid-column: 1 / span 4;
             grid-row: 6;
-        }
-        
-        .head4 {
-            grid-column: 1 / span 2;
-            grid-row: 7;
-        }
-        
-        .head5 {
-            grid-column: 1 / span 2;
-            grid-row: 8;
-        }
-        
-        .head6 {
-            grid-column: 1 / span 2;
-            grid-row: 9;
-        }
-        
-        .head7 {
-            grid-column: 1 / span 2;
-            grid-row: 10;
-        }
-        
-        .head8 {
-            grid-column: 1 / span 2;
-            grid-row: 11;
-        }
-        
-        .head9 {
-            grid-column: 1 / span 2;
-            grid-row: 12;
-        }
-        
-        .head10 {
-            grid-column: 1 / span 2;
-            grid-row: 13;
-        }
-        
-        .head11 {
-            grid-column: 1 / span 2;
-            grid-row: 14;
-        }
-        
-        .head12 {
-            grid-column: 1 / span 2;
-            grid-row: 15;
-        }
-        
-        .head13 {
-            grid-column: 1 / span 2;
-            grid-row: 16;
-        }
-        
-        .desc1 {
-            grid-column: 3 / span 2;
-            grid-row: 4;
-        }
-        
-        .desc2 {
-            grid-column: 3 / span 2;
-            grid-row: 5;
-        }
-        
-        .desc3 {
-            grid-column: 3 / span 2;
-            grid-row: 6;
-        }
-        
-        .desc4 {
-            grid-column: 3 / span 2;
-            grid-row: 7;
-        }
-        
-        .desc5 {
-            grid-column: 3 / span 2;
-            grid-row: 8;
-        }
-        
-        .desc6 {
-            grid-column: 3 / span 2;
-            grid-row: 9;
-        }
-        
-        .desc7 {
-            grid-column: 3 / span 2;
-            grid-row: 10;
-        }
-        
-        .desc8 {
-            grid-column: 3 / span 2;
-            grid-row: 11;
-        }
-        
-        .desc9 {
-            grid-column: 3 / span 2;
-            grid-row: 12;
-        }
-        
-        .desc10 {
-            grid-column: 3 / span 2;
-            grid-row: 13;
-        }
-        
-        .desc11 {
-            grid-column: 3 / span 2;
-            grid-row: 14;
-        }
-        
-        .desc12 {
-            grid-column: 3 / span 2;
-            grid-row: 15;
-        }
-        
-        .desc13 {
-            grid-column: 3 / span 2;
-            grid-row: 16;
         }
         
         h1 {
+            /*NEW FEATURE*/
             text-decoration: underline;
         }
     </style>
 </head>
+
+<!--CHALLENGES: The most difficult parts of this project code-wise was getting the grid to work and working out the javascript functions (thank you for your help, I had been stumped on that for a while). There were so many divs to keep track of and they all needed their own area in the grid, which took up a huge amount of time and effort. One little mistake ended up messing up the whole thing. Adding onto the code difficulty, working together on this kind of project came with difficulties too. The largest part was just making sure everything looked cohesive, which ended up causing a lot of wasted work if there was a bit of lack of communication. So overall, I think the code itself was a medium difficulty to grasp and it would certainly be possible to push myself further, but the problem was the time constraints in which what I have right now is my limit.-->
 
 <body>
     <div class="page-formatting grid-container">
@@ -175,126 +63,107 @@
         </div>
 
         <div class="header">
-            <h1>Clubs</h1>
-            <h2>Helping Your Community</h2>
+            <h1>CLUBS</h1>
+
         </div>
 
-        <div class="head1">
-            <h3>La Mesa de Español Club</h3>
-        </div>
-        <div class="desc1">
-            <p>room</p>
+        <div class="img"><img src="images/club.jfif" style="width:50%"></div>
 
-            <p>desc</p>
+        <!--NEW FEATURE (mark)-->
+        <div class="desc">
+            <p style="font-size: large; color: rgb(10, 41, 58);">Clubs meet <mark>every Thursday during middle band,</mark> unless stated otherwise. There is no need to sign up, just show up to whatever club interests you and give it a go!</p>
         </div>
 
-        <div class="head2">
-            <h3>APIDA - Asian, Pacific-Islander Desi America)</h3>
-        </div>
-        <div class="desc2">
-            <p>room</p>
+        <div class="grid-item table1">
+            <table>
+                <tr>
+                    <td>
+                        <h3>La Mesa de Español Club</h3>
+                    </td>
+                    <td>
+                        <p>LPC 101</p>
+                        <p>This club meets during Monday's lunch, and is a place to practice Spanish conversation as well as recieve help with other Spanish work.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>APIDA - Asian, Pacific-Islander, Desi American)</h3>
+                    </td>
+                    <td>
+                        <p>TALI 201B</p>
+                        <p>This club welcomes people of all ethnicities and backgrounds, with the goal of sharing and educating about Asian, Pacific-Islander, and Desi cultures.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>AQUILA Literary Magazine</h3>
+                    </td>
+                    <td>
+                        <p>TALI 304</p>
+                        <p>The AQUILA Literary Magazine helps to showcase students' literary works.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Board Game Club</h3>
+                    </td>
+                    <td>
+                        <p>TALI 312</p>
+                        <p>Board game club is a space for students to unwind and play some board games together (provided by the school, although you can bring your own board games).</p>
+                    </td>
+                </tr>
 
-            <p>desc</p>
-        </div>
+                <tr>
+                    <td>
+                        <h3>Dungeons & Dragons</h3>
+                    </td>
+                    <td>
+                        <p>TALI 202A</p>
+                        <p>Learn how to play the famous rpg Dungeons and Dragons together with your classmates and friends!</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Environmental Club</h3>
+                    </td>
+                    <td>
+                        <p>TMAC 201</p>
+                        <p>The Environmental Club works to spread awareness about sustainability through organizing events such as Sustainable Transport Day.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>EPSchedule</h3>
+                    </td>
+                    <td>
+                        <p>TMAC 007</p>
+                        <p>This club works to update and maintain the EPSchedule website. Coders and non-coders welcome!</p>
+                    </td>
+                </tr>
 
-        <div class="head3">
-            <h3>AQUILA Literary Magazine</h3>
-        </div>
-        <div class="desc3">
-            <p>room</p>
+                <tr>
+                    <td>
+                        <h3>Yearbook</h3>
+                    </td>
+                    <td>
+                        <p>TALI 401A</p>
+                        <p>This club will be creating the yearbook this year!</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>The Eagle Eye - Student Newspaper</h3>
+                    </td>
+                    <td>
+                        <p>TALI 108</p>
+                        <p>Students push out our school newspaper, which contains interviews, information about school events, as well as other current events students may be interested in.</p>
+                    </td>
+                </tr>
 
-            <p>desc</p>
-        </div>
-
-        <div class="head4">
-            <h3>Board Game Club</h3>
-        </div>
-        <div class="desc4">
-            <p>room</p>
-
-            <p>desc</p>
-        </div>
-
-        <div class="head5">
-            <h3>Business Club</h3>
-        </div>
-        <div class="desc5">
-            <p>room</p>
-
-            <p>desc</p>
-        </div>
-
-        <div class="head6">
-            <h3>Dungeons & Dragons</h3>
-        </div>
-        <div class="desc6">
-            <p>room</p>
-
-            <p>desc</p>
-        </div>
-
-        <div class="head7">
-            <h3>Environmental Club</h3>
-        </div>
-        <div class="desc7">
-            <p>room</p>
-
-            <p>desc</p>
-        </div>
-
-        <div class="head8">
-            <h3>EPSchedule</h3>
-        </div>
-        <div class="desc8">
-            <p>room</p>
-
-            <p>desc</p>
-        </div>
-
-        <div class="head9">
-            <h3>Girls Empowerment</h3>
-        </div>
-        <div class="desc9">
-            <p>room</p>
-
-            <p>desc</p>
-        </div>
-
-        <div class="head10">
-            <h3>GSA - Gender & Sexuality Alliance</h3>
-        </div>
-        <div class="desc10">
-            <p>room</p>
-
-            <p>desc</p>
-        </div>
-
-        <div class="head11">
-            <h3>The Eagle Eye - Student Newspaper</h3>
-        </div>
-        <div class="desc11">
-            <p>room</p>
-
-            <p>desc</p>
-        </div>
-
-        <div class="head12">
-            <h3>Yearbook</h3>
-        </div>
-        <div class="desc12">
-            <p>room</p>
-
-            <p>desc</p>
+            </table>
         </div>
 
-        <div class="head13">
-            <h3>Allies in Equity</h3>
-        </div>
-        <div class="desc13">
-            <p>room</p>
 
-            <p>desc</p>
-        </div>
 
     </div>
     <div class="footer">CREATED BY SOPHIE</div>
