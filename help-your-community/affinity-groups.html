@@ -1,3 +1,5 @@
+<!--I greatly challenged myself to use my available resources while completing this project. This is the most complicated programming project I have ever completed, and I have learned a ton. This project was a big step outside of what I believed I could do, so I am very proud of myself for accomplishing the challenge. When I first started my code writing, I realized that I didn't remember a lot of the tags and attributes that I needed. I knew that I had taken notes of previous demos, so I split my screen between old coding projects and the midterm coding project, so that I could easily look back to my notes. For the attributes and tags I either didn't understand or that I didn't have written down, I looked on W3 Schools to see if I could locate them. If I was still stuck, I reached out to a peer or teacher. I felt confident in my HTML and CSS skills, though I was very nervous about coding the JavaScript buttons. JavaScript is very unfamiliar to me so I struggled learning how to connect the buttons to their respective functions. After lots of trial and error, I got the buttons working and I even stylized them. I ran into some setbacks with organizing my grid and tables, but I was able to work through them and complete the project. I am very happy and proud of how my webpages turned out. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,48 +7,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HELP YOUR COMMUNITY | Affinity Groups</title>
+    <title>HELP YOUR COMMUNITY | AFFINITY GROUPS</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/hlh8vdi.css">
 
     <style>
-        .title{
+        .title {
             grid-column: 3;
             grid-row: 3;
         }
 
-        .blurb{
-            grid-column: 1 / span 4;
-            grid-row: 4;
-        }
-
-
-        .table1{
+        .blurb {
             grid-column: 1 / span 4;
             grid-row: 5;
         }
 
-       .blurb-padding{
-        padding-right: 20px;
-        padding-left: 20px;
-       }
-       
 
-       
-        
+        .table1 {
+            grid-column: 1 / span 4;
+            grid-row: 6;
+        }
+
+        .blurb-padding {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .photo1 {
+            grid-column: 1 / span 4;
+            grid-row: 4;
+        }
+
+        .photo-size {
+            width: auto;
+            height: 300px;
+        }
+
+        h1 {
+            /*UNDERLINE IS NEW FEATURE*/
+            text-decoration: underline;
+        }
+
+        .blank-text {
+            grid-column: 1 / span 4;
+            grid-row: 7;
+        }
     </style>
 </head>
 
 <body>
-<div class="grid-container">
-    <div class="swoosh-header grid-item">
-        <img style="width: 180px;" src="images/eps-logo-transparent.png" alt="eps logo">
-    </div>
-    <div class="swoosh-text grid-item">
-        <h2>HELP YOUR COMMUNITY</h2>
-    </div>
+    <div class="grid-container">
+        <div class="swoosh-header grid-item">
+            <img style="width: 180px;" src="images/eps-logo-transparent.png" alt="eps logo">
+        </div>
+        <div class="swoosh-text grid-item">
+            <h2>HELP YOUR COMMUNITY</h2>
+        </div>
 
-    
+
         <div class="as_container grid-item">
             <ul class="as_nav">
                 <li><a href="index.html">HOME</a></li>
@@ -58,85 +76,158 @@
                 <li><a href="sports-teams.html">SPORTS TEAMS</a></li>
             </ul>
         </div>
-    
 
 
-        <div class="title grid-item"><h1>AFFINITY GROUPS</h1></div>
-        <div class="blurb grid-item blurb-padding" style="font-size: large; color: rgb(10, 41, 58);"><p>Affinity groups are spaces for people of the same identity to talk and share perspectives. Every member of the affinity group must be able to speak from the "I" perspective and belong to the identity group.</p></div>
-<div class="grid-item table1">
-<table>
-    <tr>
-        <td><h3>Black / African-American Affinity Group</h3></td>
-        <td><p>LPC 102</p><p>Welcome to people who identify as Black or African-American.</p></td>
-    </tr>
-    <tr>
-        <td><h3>East and Southeast Asian Affinity Group</h3></td>
-        <td><p>TALI 201 B</p><p>Welcome to people who identify as East or Southese Asian. </p></td>
-    </tr>
-    <tr>
-        <td><h3>First and Second-Generation Immigrant Affinity Group</h3></td>
-        <td><p>TALI 202 A</p><p>Welcome to people who are first or second generation immigrants. </p></td>
-    </tr>
-    <tr>
-        <td><h3>Latinx / Latine Affinity Group</h3></td>
-        <td><p>TALI 201 A</p><p>Welcome to people who identify as Latin American. </p></td>
-    </tr>
-    <tr>
-        <td><h3>South Asian / Desi Affiity Group</h3></td>
-        <td><p>TALI 206</p><p>Welcome to people who identify as South Asian or as part of the Desi culture.</p></td>
-    </tr>
-    <tr>
-        <td><h3>Neurodivergent Affinity Group</h3></td>
-        <td><p>TMAC 201</p><p>Welcom to people who what differing mental and neurological functions.</p></td>
-    </tr>
-    <tr>
-        <td><h3>Remaking Masculinity -- Young Men's Affinity Group</h3></td>
-        <td><p>TALI 202 B</p><p>Welcome to people who identify as male and want to explore masculinity.</p></td>
-    </tr>
-    <tr>
-        <td><h3>Young Women's Affinity Group</h3></td>
-        <td><p>TALI 207</p><p>Welcome to people who identify as a female.</p></td>
-    </tr>
-    <tr>
-        <td><h3>White Anti-Racist Affinity Group</h3></td>
-        <td><p>LPC 101</p><p>Welcome to people who identify as white and want to learn more about anti-racism. </p></td>
-    </tr>
-    <tr>
-        <td><h3>Multiracial / Biracial Affinity Group</h3></td>
-        <td><p>TMAC 102</p><p>Welcome to people who have mixed race ancestry.</p></td>
-    </tr>
-    <tr>
-        <td><h3>Jewish Affinity Group</h3></td>
-        <td><p>LPC 201 B</p><p>Welcome to people participate in the Jewish religion.</p></td>
-    </tr>
-    <tr>
-        <td><h3>GLAM Affinity Group</h3></div></td>
-        <td><p>TMAC 205 C and B</p><p>Welcome to people who identify as bizexual, pansexual, gay, lesbian, asexual, or other who do not identify as heterosexual.</p></td>
-    </tr>
-    <tr>
-        <td><h3>Breaking the Binary Group</h3></div></td>
-        <td><p>TMAC 205 A</p><p>Welcome to people who identify as transgender, agender, genderfuild, non-binary, or others who do not identify as cisgender. </p></td>
+
+        <div class="title grid-item">
+            <h1>AFFINITY GROUPS</h1>
+        </div>
+        <div class="grid-item photo1"><img src="images/affinity-groups.jfif" alt="affinity group definition"
+                class="photo-size"></div>
+
+        <!--MARK IS NEW FEATURE-->
+        <div class="blurb grid-item blurb-padding" style="font-size: large; color: rgb(10, 41, 58);">
+            <p>Affinity groups are spaces for people of the same identity to talk and share perspectives. Every member
+                of the affinity group must be able to speak from the <mark>"I" perspective</mark> and belong to the
+                identity group.</p>
+        </div>
+        <div class="grid-item table1">
+            <table>
+                <tr>
+                    <td>
+                        <h3>Black / African-American Affinity Group</h3>
+                    </td>
+                    <td>
+                        <p>LPC 102</p>
+                        <p>Welcome to people who identify as Black or African-American.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>East and Southeast Asian Affinity Group</h3>
+                    </td>
+                    <td>
+                        <p>TALI 201 B</p>
+                        <p>Welcome to people who identify as East or Southese Asian. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>First and Second-Generation Immigrant Affinity Group</h3>
+                    </td>
+                    <td>
+                        <p>TALI 202 A</p>
+                        <p>Welcome to people who are first or second generation immigrants. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Latinx / Latine Affinity Group</h3>
+                    </td>
+                    <td>
+                        <p>TALI 201 A</p>
+                        <p>Welcome to people who identify as Latin American. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>South Asian / Desi Affiity Group</h3>
+                    </td>
+                    <td>
+                        <p>TALI 206</p>
+                        <p>Welcome to people who identify as South Asian or as part of the Desi culture.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Neurodivergent Affinity Group</h3>
+                    </td>
+                    <td>
+                        <p>TMAC 201</p>
+                        <p>Welcom to people who what differing mental and neurological functions.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Remaking Masculinity -- Young Men's Affinity Group</h3>
+                    </td>
+                    <td>
+                        <p>TALI 202 B</p>
+                        <p>Welcome to people who identify as male and want to explore masculinity.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Young Women's Affinity Group</h3>
+                    </td>
+                    <td>
+                        <p>TALI 207</p>
+                        <p>Welcome to people who identify as a female.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>White Anti-Racist Affinity Group</h3>
+                    </td>
+                    <td>
+                        <p>LPC 101</p>
+                        <p>Welcome to people who identify as white and want to learn more about anti-racism. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Multiracial / Biracial Affinity Group</h3>
+                    </td>
+                    <td>
+                        <p>TMAC 102</p>
+                        <p>Welcome to people who have mixed race ancestry.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Jewish Affinity Group</h3>
+                    </td>
+                    <td>
+                        <p>LPC 201 B</p>
+                        <p>Welcome to people participate in the Jewish religion.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>GLAM Affinity Group</h3>
+        </div>
+        </td>
+        <td>
+            <p>TMAC 205 C and B</p>
+            <p>Welcome to people who identify as bizexual, pansexual, gay, lesbian, asexual, or other who do not
+                identify as heterosexual.</p>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Breaking the Binary Group</h3>
+    </div>
+    </td>
+    <td>
+        <p>TMAC 205 A</p>
+        <p>Welcome to people who identify as transgender, agender, genderfuild, non-binary, or others who do not
+            identify as cisgender. </p>
+    </td>
     </tr>
     </table>
-</div>   
+    </div>
 
-       
-        
-        
-        
-        
-        
-        
-        
-        
-      
-        
-        
-       
+    <div class="grid-item blank-text">
+        <p> </p>
+    </div>
 
-</div>
 
-        <div class="footer">CREATED BY AMANDA</div>
+
+
+
+    </div>
+
+    <div class="footer">CREATED BY AMANDA</div>
 </body>
 
 </html>

@@ -8,121 +8,139 @@
     <title>HELP YOUR COMMUNITY | OUTSIDE OF SCHOOL EVENTS</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/hlh8vdi.css">
+
+    <style>
+        .title {
+            grid-column: 3;
+            grid-row: 3;
+        }
+
+        .main1 {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+
+        .main2 {
+            grid-column: 3;
+            grid-row: 4;
+        }
+
+        .main3 {
+            grid-column: 4;
+            grid-row: 4;
+        }
+
+        .button1 {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+        }
+
+        .p1 {
+            grid-column: 1 / span 2;
+            grid-row: 7;
+        }
+
+        .button2 {
+            grid-column: 3;
+            grid-row: 5;
+        }
+
+        .p2 {
+            grid-column: 3;
+            grid-row: 7;
+        }
+
+        .button3 {
+            grid-column: 4;
+            grid-row: 5;
+        }
+
+        .p3 {
+            grid-column: 4;
+            grid-row: 7;
+        }
+
+        .no-button1 {
+            grid-column: 1 / span 2;
+            grid-row: 6;
+        }
+
+        .no-button2 {
+            grid-column: 3;
+            grid-row: 6;
+        }
+
+        .no-button3 {
+            grid-column: 4;
+            grid-row: 6;
+        }
+
+        .table1 {
+            grid-column: 1 / span 2;
+            grid-row: 9;
+        }
+
+        .video1 {
+            grid-column: 4;
+            grid-row: 9;
+        }
+
+        .video-size {
+            width: 350px;
+            height: auto;
+        }
+
+        .teacher-info {
+            grid-column: 1 / span 2;
+            grid-row: 8;
+        }
+
+        .picture-title {
+            grid-column: 3;
+            grid-row: 8;
+        }
+
+        .video-title {
+            grid-column: 4;
+            grid-row: 8;
+        }
+
+        .image-size {
+            width: 350px;
+            height: auto
+        }
+
+        .image1 {
+            grid-column: 3;
+            grid-row: 9;
+        }
+
+        .blank-text {
+            grid-column: 1 / span 4;
+            grid-row: 10;
+        }
+
+        .button-style {
+            /*ADDING COLOR TO BUTTONS IS A NEW USE OF CSS*/
+            background-color: rgb(239, 180, 1);
+            border: 1px solid rgb(151, 114, 3);
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            /*CHANGING CURSOR IS A NEW FEATURE*/
+            cursor: pointer;
+        }
+
+        h1 {
+            /*UNDERLINE IS NEW FEATURE*/
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
-<style>
-    .title{
-        grid-column: 3;
-        grid-row: 3;
-    }
-
-    .main1 {
-        grid-column: 1 / span 2;
-        grid-row: 4;
-    }
-
-    .main2{
-        grid-column: 3;
-        grid-row: 4;
-    }
-
-    .main3{
-        grid-column: 4;
-        grid-row: 4;
-    }
-
-    .button1{
-        grid-column: 1 / span 2;
-        grid-row: 5;
-    }
-
-    .p1{
-        grid-column: 1 / span 2;
-        grid-row: 7;
-    }
-
-    .button2{
-        grid-column: 3;
-        grid-row: 5;
-    }
-
-    .p2{
-        grid-column: 3;
-        grid-row: 7;
-    }
-
-    .button3{
-        grid-column: 4;
-        grid-row: 5;
-    }
-
-    .p3{
-        grid-column: 4;
-        grid-row: 7;
-    }
-
-    .no-button1{
-        grid-column: 1 / span 2;
-        grid-row: 6;
-    }
-
-    .no-button2{
-        grid-column: 3;
-        grid-row: 6;
-    }
-
-    .no-button3{
-        grid-column: 4;
-        grid-row: 6;
-    }
-
-    .table1{
-        grid-column: 1 / span 2;
-        grid-row: 9;
-    }
-
-    .video1{
-        grid-column: 4;
-        grid-row: 9;
-    }
-
-    .video-size{
-        width: 350px;
-        height: auto;
-    }
-
-    .teacher-info{
-        grid-column: 1 / span 2;
-        grid-row: 8;
-    }
-
-    .picture-title{
-        grid-column: 3;
-        grid-row: 8;
-    }
-
-    .video-title{
-        grid-column: 4;
-        grid-row: 8;
-    }
-
-
-
-.image-size{
-    width: 350px;
-    height:auto
-}
-
-.image1{
-    grid-column: 3;
-    grid-row: 9;
-}
-
-.blank-text{
-    grid-column: 1 / span 4;
-    grid-row: 10;
-}
-</style>
 
 <body>
     <div class="grid-container">
@@ -132,7 +150,7 @@
         <div class="swoosh-text grid-item">
             <h2>HELP YOUR COMMUNITY</h2>
         </div>
-        
+
         <div class="as_container grid-item">
             <ul class="as_nav">
                 <li><a href="index.html">HOME</a></li>
@@ -144,108 +162,138 @@
                 <li><a href="sports-teams.html">SPORTS TEAMS</a></li>
             </ul>
         </div>
-        
 
-        <div class="title grid-item"><h1>OUTSIDE OF SCHOOL EVENTS</h1></div>
-        
 
-        <div class="main1 grid-item"><h3>Mountain Biking</h3></div>
+        <div class="title grid-item">
+            <h1>OUTSIDE OF SCHOOL EVENTS</h1>
+        </div>
+
+
+        <div class="main1 grid-item">
+            <h3>Mountain Biking</h3>
+        </div>
         <button onclick="bike();" class="button1 grid-item button-style">Get Information</button>
         <button onclick="noBike();" class="no-button1 grid-item button-style">Hide Information</button>
-        <div class="p1 grid-item"><p id="mountain-biking"></p></div>
+        <div class="p1 grid-item">
+            <p id="mountain-biking"></p>
+        </div>
 
-        <div class="main2 grid-item"><h3>US Camping Trip</h3></div>
+        <div class="main2 grid-item">
+            <h3>US Camping Trip</h3>
+        </div>
         <button onclick="camp();" class="button2 grid-item button-style">Get Information</button>
         <button onclick="noCamp();" class="no-button2 grid-item button-style">Hide Info</button>
-        <div class="p2 grid-item"><p id="camping-trip"></p></div>
+        <div class="p2 grid-item">
+            <p id="camping-trip"></p>
+        </div>
 
-        <div class="main3 grid-item"><h3>Seattle Hike</h3></div>
+        <div class="main3 grid-item">
+            <h3>Seattle Hike</h3>
+        </div>
         <button onclick="hike();" class="button3 grid-item button-style">Get Information</button>
         <button onclick="noHike()" class="no-button3 grid-item button-style">Hide Info</button>
-        <div class="p3 grid-item"><p id="hiking-trip"></p></div>
+        <div class="p3 grid-item">
+            <p id="hiking-trip"></p>
+        </div>
 
-<div class="grid-item teacher-info"><h3>Teacher Information</h3></div>
-<div class="grid-item picture-title"><h3>Catalina Island Backpacking Trip</h3></div>
-<div class="grid-item video-title"><h3>Reasons Why Going Outside is Beneficial</h3></div>
+        <div class="grid-item teacher-info">
+            <h3>Teacher Information</h3>
+        </div>
+        <div class="grid-item picture-title">
+            <h3>Catalina Island Backpacking Trip</h3>
+        </div>
+        <div class="grid-item video-title">
+            <h3>Reasons Why Going Outside is Beneficial</h3>
+        </div>
 
-<div class="grid-item table1">
-        <table>
-            <tr>
-                <th>Teacher Name</th>
-                <th>Email</th>
-                <th>Facilitator Description</th>
-            </tr>
-            <tr>
-                <td>Mr. Bandel</td>
-                <td><a href="mailto:jbandel@eastsideprep.org">jbandel@eastsideprep.org</a></td>
-                <td>Facilitates the mountain biking outings.</td>
-            </tr>
-            <tr>
-                <td>Mr. Kelly Kelly-Hedrick</td>
-                <td><a href="mailto:dkhedrick@eastsideprep.org">dkhedrick@eastsideprep.org</a></td>
-                <td>Facilitates the camping and hiking trips.</td>
-            </tr>
-            <tr>
-                <td>Ms. Thompson</td>
-                <td><a href="mailto:kthompson@eastsideprep.org">kthompson@eastsideprep.org</a></td>
-                <td>Co-facilitates the mountain biking outings.</td>
-            </tr>
+        <div class="grid-item table1">
+            <table>
+                <tr>
+                    <th>Teacher Name</th>
+                    <th>Email</th>
+                    <th>Facilitator Description</th>
+                </tr>
+                <tr>
+                    <td>Mr. Bandel</td>
+                    <td><a href="mailto:jbandel@eastsideprep.org">jbandel@eastsideprep.org</a></td>
+                    <td>Facilitates the mountain biking outings.</td>
+                </tr>
+                <tr>
+                    <td>Mr. Kelly Kelly-Hedrick</td>
+                    <td><a href="mailto:dkhedrick@eastsideprep.org">dkhedrick@eastsideprep.org</a></td>
+                    <td>Facilitates the camping and hiking trips.</td>
+                </tr>
+                <tr>
+                    <td>Ms. Thompson</td>
+                    <td><a href="mailto:kthompson@eastsideprep.org">kthompson@eastsideprep.org</a></td>
+                    <td>Co-facilitates the mountain biking outings.</td>
+                </tr>
 
-        </table>
+            </table>
+        </div>
+
+        <div class="grid-item video1">
+            <iframe class="video-size" src="https://www.youtube.com/embed/aD0_J-lOSdo" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="video-size" src="https://www.youtube.com/embed/vD0w_gOEbUI" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe class="video-size" src="https://www.youtube.com/embed/pPwZUL6Dd3Q" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="grid-item image1"><img src="images/camping.jpg" alt="students in tree" class="image-size"></div>
+
+        <div class="grid-item blank-text">
+            <p> </p>
+        </div>
+
     </div>
 
-    <div class="grid-item video1">
-        <iframe class="video-size" src="https://www.youtube.com/embed/aD0_J-lOSdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe  class="video-size" src="https://www.youtube.com/embed/vD0w_gOEbUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe class="video-size" src="https://www.youtube.com/embed/pPwZUL6Dd3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
 
-<div class="grid-item image1"><img src="images/camping.jpg" alt="students in tree" class="image-size"></div>
 
-<div class="grid-item blank-text"><p> </p></div>
-    
-    </div>
+    <script>
+        function bike() {
+            let bikeInfo = document.getElementById('mountain-biking');
+            bikeInfo.innerHTML = "Mr. Bandel facilitates group mountain biking trips at Duthie Hill. Usually lasting for 2 hours. Bring your own bike, water, snacks, protection gear, and medication. ";
 
-   
+        }
 
-<script>
-    function bike(){
-        let bikeInfo = document.getElementById('mountain-biking');
-        bikeInfo.innerHTML= "Mr. Bandel facilitates group mountain biking trips at Duthie Hill. Usually lasting for 2 hours. Bring your own bike, water, snacks, protection gear, and medication. ";
-        
-    }
+        function noBike() {
+            let noBikeInfo = document.getElementById('mountain-biking');
+            noBikeInfo.innerHTML = " ";
+        }
 
-    function noBike(){
-        let noBikeInfo = document.getElementById('mountain-biking');
-        noBikeInfo.innerHTML = " ";
-    }
+        function camp() {
+            let campInfo = document.getElementById('camping-trip')
+            campInfo.innerHTML = "Mr. Kelly-Hedrick facilitates a camping trip to Ocean City State Park. A two day overnight trip for beginner campers.";
+        }
 
-    function camp(){
-        let campInfo = document.getElementById('camping-trip')
-        campInfo.innerHTML= "Mr. Kelly-Hedrick facilitates a camping trip to Ocean City State Park. A two day overnight trip for beginner campers.";
-    }
+        function noCamp() {
+            let noCampInfo = document.getElementById('camping-trip')
+            noCampInfo.innerHTML = " ";
+        }
 
-    function noCamp(){
-        let noCampInfo = document.getElementById('camping-trip')
-        noCampInfo.innerHTML = " ";
-    }
+        function hike() {
+            let hikeInfo = document.getElementById('hiking-trip')
+            hikeInfo.innerHTML = "Mr. Kelly-Hedrick facilitates a 4 1/2 hour urban hike through the Seattle Arboretum. Bring walking shoes, water, a lunch, and a camera for capturing the beautiful fall colors!";
+        }
 
-    function hike(){
-        let hikeInfo = document.getElementById('hiking-trip')
-        hikeInfo.innerHTML= "Mr. Kelly-Hedrick facilitates a 4 1/2 hour urban hike through the Seattle Arboretum. Bring walking shoes, water, a lunch, and a camera for capturing the beautiful fall colors!";
-    }
+        function noHike() {
+            let noHikeInfo = document.getElementById('hiking-trip')
+            noHikeInfo.innerHTML = " ";
+        }
 
-    function noHike(){
-        let noHikeInfo = document.getElementById('hiking-trip')
-        noHikeInfo.innerHTML = " ";
-    }
+    </script>
 
-</script>
+    <div class="footer">CREATED BY AMANDA</div>
 
-<div class="footer">CREATED BY AMANDA</div>
 </body>
-
-
 
 
 </html>
