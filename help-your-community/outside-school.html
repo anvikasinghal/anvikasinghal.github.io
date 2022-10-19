@@ -78,8 +78,70 @@
 
     .table1{
         grid-column: 1 / span 2;
+        grid-row: 9;
+    }
+
+    table,
+        th,
+        td {
+            border: 3px solid rgb(140,14,15,255);
+            font-size: medium;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    
+    .video1{
+        grid-column: 4;
+        grid-row: 9;
+    }
+
+    .video-size{
+        width: 350px;
+        height: auto;
+    }
+
+    .teacher-info{
+        grid-column: 1 / span 2;
         grid-row: 8;
     }
+
+    .picture-title{
+        grid-column: 3;
+        grid-row: 8;
+    }
+
+    .video-title{
+        grid-column: 4;
+        grid-row: 8;
+    }
+
+    .button-style {
+  background-color: rgb(140,14,15,255);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.image-size{
+    width: 350px;
+    height:auto
+}
+
+.image1{
+    grid-column: 3;
+    grid-row: 9;
+}
+
+.blank-text{
+    grid-column: 1 / span 4;
+    grid-row: 10;
+}
 </style>
 
 <body>
@@ -108,19 +170,24 @@
         
 
         <div class="main1 grid-item"><h3>Mountain Biking</h3></div>
-        <button onclick="bike();" class="button1 grid-item">Get Information</button>
-        <button onclick="noBike();" class="no-button1 grid-item">Hide Information</button>
+        <button onclick="bike();" class="button1 grid-item button-style">Get Information</button>
+        <button onclick="noBike();" class="no-button1 grid-item button-style">Hide Information</button>
         <div class="p1 grid-item"><p id="mountain-biking"></p></div>
 
         <div class="main2 grid-item"><h3>US Camping Trip</h3></div>
-        <button onclick="camp();" class="button2 grid-item">Get Information</button>
-        <button onclick="noCamp();" class="no-button2 grid-item">Hide Info</button>
+        <button onclick="camp();" class="button2 grid-item button-style">Get Information</button>
+        <button onclick="noCamp();" class="no-button2 grid-item button-style">Hide Info</button>
         <div class="p2 grid-item"><p id="camping-trip"></p></div>
 
         <div class="main3 grid-item"><h3>Seattle Hike</h3></div>
-        <button onclick="hike();" class="button3 grid-item">Get Information</button>
-        <button onclick="noHike()" class="no-button3 grid-item">Hide Info</button>
+        <button onclick="hike();" class="button3 grid-item button-style">Get Information</button>
+        <button onclick="noHike()" class="no-button3 grid-item button-style">Hide Info</button>
         <div class="p3 grid-item"><p id="hiking-trip"></p></div>
+
+<div class="grid-item teacher-info"><h3>Teacher Information</h3></div>
+<div class="grid-item picture-title"><h3>Catalina Island Backpacking Trip</h3></div>
+<div class="grid-item video-title"><h3>Reasons Why Going Outside is Beneficial</h3></div>
+
 <div class="grid-item table1">
         <table>
             <tr>
@@ -147,7 +214,15 @@
         </table>
     </div>
 
+    <div class="grid-item video1">
+        <iframe class="video-size" src="https://www.youtube.com/embed/aD0_J-lOSdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe  class="video-size" src="https://www.youtube.com/embed/vD0w_gOEbUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video-size" src="https://www.youtube.com/embed/pPwZUL6Dd3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
+<div class="grid-item image1"><img src="images/camping.jpg" alt="students in tree" class="image-size"></div>
+
+<div class="grid-item blank-text"><p> </p></div>
     
     </div>
 
@@ -187,7 +262,7 @@
 
 </script>
 
-<div class="footer">Created by Amanda Rogers</div>
+<div class="footer">CREATED BY AMANDA</div>
 </body>
 
 
