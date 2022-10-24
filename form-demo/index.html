@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWO TRUTHS AND A LIE | ANVIKA</title>
+    <link rel="stylesheet" href="https://use.typekit.net/hlh8vdi.css">
+
+    <style>
+        .page-formatting {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="page-formatting">
+
+        <h1>TWO TRUTHS AND A LIE</h1>
+
+        <p id="greet" style="font-size: large;">welcome!</p>
+
+        <h2>intro</h2>
+
+        <form id="greet-form">
+            <label for="fname">first name:</label><br>
+            <input type="text" id="fname" name="greet-fname"><br>
+            <label for="lname">last name:</label><br>
+            <input type="text" id="lname" name="greet-lname"><br>
+            <label for="age">age:</label><br>
+            <input type="text" name="greet-age" id="age"><br>
+        </form>
+        <br><input type="button" value="SUBMIT" onclick="greet();"><br>
+
+        <hr>
+
+        <h2>warm up trivia</h2>
+
+        <p id="trivia-answer"></p>
+
+        <form id="trivia-form">
+            <input type="radio" name="trivia" id="chocolate">
+            <label for="chocolate">dark chocolate</label><br>
+            <input type="radio" name="trivia" id="tuna">
+            <label for="tuna">canned tuna</label><br>
+            <input type="radio" name="trivia" id="honey">
+            <label for="honey">honey</label><br>
+        </form>
+        <br><input type="button" value="SUBMIT" onclick="trivia();"><br>
+
+        <hr>
+
+        <h2>two truths and a lie</h2>
+
+        <p id="lie-answer"></p>
+
+        <form id="lie-form">
+            <input type="radio" name="lie" id="bones">
+            <label for="bones">i've broken five bones</label><br>
+            <input type="radio" name="lie" id="brother">
+            <label for="brother">my brother goes to EPS</label><br>
+            <input type="radio" name="lie" id="dog">
+            <label for="dog">my dog's name is nailah</label><br>
+        </form>
+        <br><input type="button" value="SUBMIT" onclick="lie();"><br>
+
+        <hr>
+
+        <h2>two truths and a lie - checked</h2>
+
+        <p id="truth-answer"></p>
+
+        <form id="truth-form">
+            <input type="checkbox" name="truth" id="skiing">
+            <label for="skiing">i love skiing</label><br>
+            <input type="checkbox" name="truth" id="rock">
+            <label for="rock">i love rock climbing</label><br>
+            <input type="checkbox" name="truth" id="sailing">
+            <label for="sailing">i love sailing</label><br>
+        </form>
+        <br><input type="button" value="SUBMIT" onclick="truth();"><br>
+
+    </div>
+
+    <script src="js/game.js"></script>
+
+</body>
+
+</html>
