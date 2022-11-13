@@ -7,6 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAYAMS MUSIC | ACHIEVEMENTS</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/zoo6rgh.css">
 
@@ -41,6 +48,7 @@
             grid-column: 2 / span 3;
             grid-row: 4;
             font-size: x-large;
+            padding: 20px 0px;
         }
 
         table,
@@ -52,7 +60,47 @@
             padding-left: 1px;
             padding-right: 1px;
         }
+
+        .ourgoal {
+            grid-row: 5;
+            grid-column: 1 / span 2;
+        }
+
+        .curriculum {
+            grid-row: 5;
+            grid-column: 3 / span 3;
+        }
+
+        .reflections {
+            grid-row: 7;
+            grid-column: 1 / span 3;
+        }
+
+        .success {
+            grid-row: 7;
+            grid-column: 4 / span 2;
+        }
+
+        .grid-item2 {
+            border: rgb(156, 132, 89) solid 5px;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .as-carousel {
+            grid-row: 6;
+            grid-column: 2 / span 3;
+            margin: 20px 0px;
+            border: rgb(156, 132, 89) solid 5px;
+            border-radius: 5px;
+        }
+
+        .ascaption {
+            background-color: rgba(0, 0, 0, .5);
+        }
     </style>
+
+
 
 </head>
 
@@ -63,25 +111,145 @@
         <div class="logo-image grid-item">
             <img style="width: 120px;" src="images/logo-tmp.png" alt="logo">
         </div>
-        <div class="logo-header grid-item">
-            <h2 style="font-size: 35px;">PayamsMusic</h2>
-        </div>
-        <div class="logo-subheader grid-item">
-            <h2>PRACTICE MAKES PERFECT</h2>
-        </div>
-
+        <h2 class="logo-header grid-item">PayamsMusic</h2>
+        <h2 class="logo-subheader grid-item">PRACTICE MAKES PERFECT</h2>
 
         <div class="as_container grid-item">
             <ul class="as_nav">
-                <li><a class="current" href="index.html">HOME</a></li>
-                <li><a href="achievements.html">ACHIEVEMENTS</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="current" href="achievements.html">ACHIEVEMENTS</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
 
-        <h1 class="header grid-item">LEARN TO PLAY THE MUSIC YOU LOVE</h1>
+        <h1 class="header grid-item">ABOUT US</h1>
 
+        <div class="curriculum grid-item2">
+            <h3>CURRICULUM</h3>
+            <p>We use a unique curriculum which is tailored specifically for each and every student. Based on their
+                learning style, we write songs to match their individual musical interest. We make our lessons fun and
+                enjoyable for our students by incorporating ear training, composition, and teaching pieces they enjoy
+                such as songs from the radio and movie soundtracks.</p>
+        </div>
+
+        <div class="ourgoal grid-item2">
+            <h3>OUR GOAL</h3>
+            <p>Our goal is to make our students develop a life-lasting array of skills and passion for music, rather
+                than just another dropped hobby. However, due to our limited space of 200 students, we only accept the
+                most passionate, determined, and hard-working individuals that pass our interview process.</p>
+        </div>
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide grid-item as-carousel" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+
+
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carousel images/adela-statequalifier.jfif" alt="Los Angeles" class="d-block w-100">
+                    <div class="carousel-caption ascaption">
+                        <p>Adela - State Qualifier</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel images/alex-statewinner.jfif" alt="Chicago" class="d-block w-100">
+                    <div class="carousel-caption ascaption">
+                        <p>Alex - State Winner</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel images/arman-statewinner.jfif" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption ascaption">
+                        <p>Arman - State Winner</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel images/benyamin-statewinner.jfif" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption ascaption">
+                        <p>Benyamin - State Winner</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel images/jonathan-statewinner.jfif" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption ascaption">
+                        <p>Jonathan - State Winner</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel images/kian-statewinner.jfif" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption ascaption">
+                        <p>Kian - State Winner</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel images/nika-statequalifier.jfif" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption ascaption">
+                        <p>Nika - State Qualifier</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel images/paniz-statequalifier.jfif" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption ascaption">
+                        <p>Paniz - State Qualifier</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel images/payvand-statequalifier.jfif" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption ascaption">
+                        <p>Payvand - State Qualifier</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel images/zifu-nationalwinner.jfif" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption ascaption">
+                        <p>Zifu - National Winner</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+        <div class="success grid-item2">
+            <h3>SUCCESS</h3>
+            <p>While the average length required to receive a Diploma in Social Music (concert level pianist) from the
+                American College of Musicians is 11 years, our students take an average of 4 years. Not only are they
+                ranked 1st in Washington in student acceleration, they have received the highest grades averaging 9.71
+                out of 10 over the past 7 years.</p>
+        </div>
+
+        <div class="reflections grid-item2">
+            <h3>REFLECTIONS</h3>
+            <p>From 2015, our students have been dominating all competitions entered, especially the National PTA
+                Reflections competition. In the 2018-2019 school year, there were over 18,000 students entered in
+                Washington State, 23 of them consisting of our students. A total of 9 students were awarded at the state
+                level, 6 of them being from our initial 23 students. We won 66% of the state winners, when our students
+                only attributed 0.13% of the total entrees. Additionally, our students are ranked 1st in Washington and
+                2nd nationally in composition.</p>
+        </div>
 
 
 
