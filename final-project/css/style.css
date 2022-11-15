@@ -11,9 +11,9 @@ body {}
     text-align: center;
     grid-gap: 5px;
     grid-template-columns: 19.6% 19.7% 19.7% 19.7% 19.6%;
-    font-family: essonnes-display, serif;
-    font-weight: 300;
-    font-style: normal;
+    font-family: essonnes-display, serif !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
     margin: 20px 30px;
     background-color: rgb(239, 233, 249);
     padding: 20px;
@@ -21,7 +21,9 @@ body {}
     letter-spacing: 0.5px;
 }
 
+
 .grid-item {}
+
 
 .logo-image {
     grid-column: 1;
@@ -141,4 +143,11 @@ th {
     border-radius: 5px;
     border: rgb(120, 114, 32) solid 5px;
     margin: 10px;
+}
+
+h3 {
+    font-family: essonnes-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
 }
