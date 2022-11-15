@@ -18,32 +18,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/zoo6rgh.css">
 
     <style>
-        /* COLORS
-              yellow: rgba(220,169,88,255)
-              red: rgba(140,14,15,255)
-              blue: rgb(10,41,58)
-          */
-
-        h1 {
-            /*NEW FEATURE*/
-            text-decoration: underline;
-        }
-
-        button {
-            /*NEW FEATURE*/
-            letter-spacing: 3px;
-            padding-left: 2px;
-            padding-right: 2px;
-            padding-top: none;
-            padding-right: none;
-            margin-left: auto;
-            font-size: 12.5px;
-        }
-
-        .highlight {
-            background-color: rgb(245, 185, 6);
-        }
-
         .header {
             grid-column: 2 / span 3;
             grid-row: 4;
@@ -76,8 +50,18 @@
         }
 
         img {
-            border: rgb(156, 132, 89) solid 3px;
+            border: rgb(120, 114, 32) solid 3px;
             border-radius: 5px;
+        }
+
+        .photocredit {
+            grid-row: 6;
+            grid-column: 2 / span 3;
+        }
+
+        .photocredit a:link,
+        .photocredit a:visited {
+            color: rgb(153, 58, 9);
         }
     </style>
 
@@ -182,6 +166,8 @@
 
         </div>
 
+        <p class="photocredit grid-item">Photos courtesy of <a href="https://www.roddychung.com/"
+                target="_blank">www.roddychung.com</a></p>
 
     </div>
 
